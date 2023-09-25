@@ -4,13 +4,13 @@
 
 @layer components {
   @font-face {
-    font-family: Vazir Medium;
-    src: url(/assets/fonts/Vazir-Medium.woff2);
+    font-family: Vazir Regular;
+    src: url(/assets/fonts/Vazir-Regular.woff2);
   }
 
   @font-face {
-    font-family: Vazir bold;
-    src: url(/assets/fonts/Vazir-Bold.woff2);
+    font-family: Vazir Medium;
+    src: url(/assets/fonts/Vazir-Medium.woff2);
   }
 
   @font-face {
@@ -20,5 +20,10 @@
 
   body {
     @apply bg-black font-VazirM text-white
+  }
+
+  /* active NavLink */
+  .navLink__active {
+    @apply border-l-4 border-secondary text-secondary font-VazirB;
   }
 }

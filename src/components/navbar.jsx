@@ -1,7 +1,107 @@
+import Link from 'next/link'
+import { useRouter } from 'next/router'
 import React from 'react'
 
 export default function Navbar() {
+  const router = useRouter()
   return (
-    <div>navbar</div>
+    <nav className='hidden md:block fixed w-2/3 md:w-[261px] h-full right-0 bg-primry py-4'>
+      <div className="flex justify-center mb-6">
+        <svg className='w-[91px] h-[48px]'>
+          <use href='#Logo'></use>
+        </svg>
+      </div>
+      <ul className='space-y-1'>
+        <li className={`w-full px-5 py-2  text-lg ${router.pathname == "/" ? "navLink__active" : "font-VazirR text-deactivate"}`}>
+          <Link href={"/"} className='flex gap-x-3.5 items-center w-fit'>
+            <svg className='w-6 h-6'>
+              <use href='#home'></use>
+            </svg>
+            داشبورد
+          </Link>
+        </li>
+
+        <li className={`w-full px-5 py-2   ${router.pathname == "/add" ? "navLink__active" : "font-VazirR text-deactivate"}`}>
+          <Link href={"/add"} className='flex gap-x-3.5 items-center w-fit'>
+            <svg className='w-6 h-6'>
+              <use href='#plus'></use>
+            </svg>
+            ایجاد کار
+          </Link>
+        </li>
+
+        <li className={`w-full px-5 py-2   ${router.pathname == "/users" ? "navLink__active" : "font-VazirR text-deactivate"}`}>
+          <Link href={"/users"} className='flex gap-x-3.5 items-center w-fit'>
+            <svg className='w-6 h-6'>
+              <use href='#users'></use>
+            </svg>
+            معرفی اشخاص
+          </Link>
+        </li>
+
+        <li className={`w-full px-5 py-2   ${router.pathname == "/docs" ? "navLink__active" : "font-VazirR text-deactivate"}`}>
+          <Link href={"/docs"} className='flex gap-x-3.5 items-center w-fit'>
+            <svg className='w-6 h-6'>
+              <use href='#docs'></use>
+            </svg>
+            اداری
+          </Link>
+        </li>
+
+        <li className={`w-full px-5 py-2   ${router.pathname == "/category" ? "navLink__active" : "font-VazirR text-deactivate"}`}>
+          <Link href={"/category"} className='flex gap-x-3.5 items-center w-fit'>
+            <svg className='w-6 h-6 '>
+              <use href='#category'></use>
+            </svg>
+            کارتابل
+          </Link>
+        </li>
+
+        <li className={`w-full px-5 py-2   ${router.pathname == "/folder" ? "navLink__active" : "font-VazirR text-deactivate"}`}>
+          <Link href={"/folder"} className='flex gap-x-3.5 items-center w-fit'>
+            <svg className='w-6 h-6 '>
+              <use href='#folder'></use>
+            </svg>
+            دبیرخانه
+          </Link>
+        </li>
+
+        <li className={`w-full px-5 py-2   ${router.pathname == "/setting" ? "navLink__active" : "font-VazirR text-deactivate"}`}>
+          <Link href={"/setting"} className='flex gap-x-3.5 items-center w-fit'>
+            <svg className='w-6 h-6 '>
+              <use href='#setting'></use>
+            </svg>
+            تنظیمات
+          </Link>
+        </li>
+        <li className={`w-full px-5 py-2   ${router.pathname == "/send" ? "navLink__active" : "font-VazirR text-deactivate"}`}>
+          <Link href={"/send "} className='flex gap-x-3.5 items-center w-fit'>
+            <svg className='w-6 h-6 '>
+              <use href='#send '></use>
+            </svg>
+            پیام رسان
+          </Link>
+        </li>
+
+        <li className={`w-full px-5 py-2   ${router.pathname == "/graph" ? "navLink__active" : "font-VazirR text-deactivate"}`}>
+          <Link href={"/graph "} className='flex gap-x-3.5 items-center w-fit'>
+            <svg className='w-6 h-6 '>
+              <use href='#graph '></use>
+            </svg>
+            شارژ
+          </Link>
+        </li>
+
+        <li className={`w-full px-5 py-2   ${router.pathname == "/logout" ? "navLink__active" : "font-VazirR text-deactivate"}`}>
+          <Link href={"/logout "} className='flex gap-x-3.5 items-center w-fit'>
+            <svg className='w-6 h-6 '>
+              <use href='#logout '></use>
+            </svg>
+            خروج
+          </Link>
+        </li>
+
+      </ul>
+    </nav>
   )
 }

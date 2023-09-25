@@ -8,9 +8,9 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
+        "VazirR": "Vazir Regular",
         "VazirM": "Vazir Medium",
-        "VazirB": "Vazir Bold",
-        "VazirBL": "VazirBlack",
+        "VazirB": "VazirBlack",
       },
       colors: {
         "black": "#131517",
@@ -19,6 +19,7 @@ module.exports = {
         "purple": "#C084FC",
         "green": "#00CA51",
         "orange": "#FF9900",
+        "deactivate": "#C1C6E2",
       }
     },
   },
