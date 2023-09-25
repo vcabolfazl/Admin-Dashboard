@@ -1,3 +1,24 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  @font-face {
+    font-family: Vazir Medium;
+    src: url(/assets/fonts/Vazir-Medium.woff2);
+  }
+
+  @font-face {
+    font-family: Vazir bold;
+    src: url(/assets/fonts/Vazir-Bold.woff2);
+  }
+
+  @font-face {
+    font-family: VazirBlack;
+    src: url(/assets/fonts/Vazir-Black.woff2);
+  }
+
+  body {
+    @apply bg-black font-VazirM text-white
+  }
+}
