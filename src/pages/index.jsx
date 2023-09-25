@@ -3,9 +3,9 @@ import Link from "next/link";
 export default function Home() {
   return (
     <div className="mt-20 float-left w-full md:w-5/6 md:px-5 md:pt-3.5">
-      <h2 className="font-VazirB text-2xl text-secondary">داشبورد</h2>
+      <h2 className="font-VazirB text-2xl text-secondary px-5 md:px-0">داشبورد</h2>
 
-      <div className="flex items-center justify-between mt-6">
+      <div className="flex flex-wrap gap-5 items-center justify-center md:justify-between mt-6">
         <form className="flex items-center gap-x-2 bg-primry rounded-md ps-3">
           <svg className="w-6 h-6">
             <use href="#search"></use>
@@ -29,10 +29,10 @@ export default function Home() {
       </div>
 
       <div className="relative scroll overflow-auto mt-6 max-h-[30rem]">
-        <table className="w-full text-sm text-center pl-2">
+        <table className="w-full text-sm text-center px-2">
           <thead className="bg-[#448BFF]/10">
             <tr>
-              <th scope="col" className="py-3 rounded-s-lg">
+              <th scope="col" className="py-3 rounded-s-lg pr-2">
                 ردیف
               </th>
               <th scope="col">
@@ -49,7 +49,7 @@ export default function Home() {
           </thead>
           <tbody>
             <tr className=" bg-primry">
-              <td scope="row" className="py-3 rounded-s-lg">
+              <td scope="row" className="py-3 rounded-s-lg pr-2">
                 1
               </td>
               <td>
@@ -61,7 +61,7 @@ export default function Home() {
               <td>
                 ۱۴۰۲/۰۵/۱۵ − ۱۸:۲۵:۰۸
               </td>
-              <td className="py-3 rounded-l-lg">
+              <td className="py-3 rounded-l-lg pl-2">
                 <div className="w-full flex items-center justify-center gap-x-2.5 text-secondary">
                   <Link href={"/"}>
                     <svg className="w-6 h-6">
@@ -81,7 +81,6 @@ export default function Home() {
                 </div>
               </td>
             </tr>
-            
           </tbody>
         </table>
       </div>
