@@ -236,6 +236,56 @@ function Svg() {
     />
    </symbol>
 
+   <symbol id='profile'
+    viewBox="0 0 38 38"
+    fill="none"
+   >
+    <rect width={38} height={38} rx={19} fill="#448BFF" fillOpacity={0.14} />
+    <path
+     d="M18.9969 22.354C14.4409 22.354 10.5493 23.0723 10.5493 25.9455C10.5493 28.8199 14.4166 29.5635 18.9969 29.5635C23.5529 29.5635 27.4445 28.8463 27.4445 25.9719C27.4445 23.0976 23.5783 22.354 18.9969 22.354Z"
+     fill="#448BFF"
+    />
+    <path
+     opacity={0.4}
+     d="M18.9962 19.6167C22.0997 19.6167 24.5863 17.129 24.5863 14.0265C24.5863 10.9241 22.0997 8.43637 18.9962 8.43637C15.8937 8.43637 13.406 10.9241 13.406 14.0265C13.406 17.129 15.8937 19.6167 18.9962 19.6167Z"
+     fill="#448BFF"
+    />
+   </symbol>
+
+   <symbol id="menu"
+    fill="#000000"
+    viewBox="0 0 24 24"
+    data-name="Line Color"
+    xmlns="http://www.w3.org/2000/svg"
+    className="icon line-color"
+   >
+    <line
+     id="secondary"
+     x1={3}
+     y1={12}
+     x2={21}
+     y2={12}
+     style={{
+      fill: "none",
+      stroke: "#448BFF",
+      strokeLinecap: "round",
+      strokeLinejoin: "round",
+      strokeWidth: 2,
+     }}
+    />
+    <path
+     id="primary"
+     d="M9,18H21M3,6H15"
+     style={{
+      fill: "none",
+      stroke: "#fff",
+      strokeLinecap: "round",
+      strokeLinejoin: "round",
+      strokeWidth: 2,
+     }}
+    />
+   </symbol>
+
   </svg>
  )
 }

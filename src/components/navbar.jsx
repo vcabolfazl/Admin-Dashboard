@@ -2,10 +2,10 @@ import Link from 'next/link'
 import { useRouter } from 'next/router'
 import React from 'react'
 
-export default function Navbar() {
+export default function Navbar({ hidden }) {
   const router = useRouter()
   return (
-    <nav className='hidden md:block fixed w-2/3 md:w-[261px] h-full right-0 bg-primry py-4'>
+    <nav className={`fixed w-2/3 md:w-1/6 h-full top-0 right-0 bg-primry py-4 z-30  ${hidden ? "hidden md:block" : null}`}>
       <div className="flex justify-center mb-6">
         <svg className='w-[91px] h-[48px]'>
           <use href='#Logo'></use>

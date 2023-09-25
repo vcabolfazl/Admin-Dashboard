@@ -1,7 +1,7 @@
 export default function Home() {
   return (
     <>
-      <center>این متن فقط برای تست نوشته شده است</center>
+      <center className="mt-20">این متن فقط برای تست نوشته شده است</center>
     </>
   )
 }
