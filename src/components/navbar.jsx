@@ -12,7 +12,7 @@ export default function Navbar({ hidden }) {
         </svg>
       </div>
       <ul className='space-y-1'>
-        <li className={`w-full px-5 py-2  text-lg ${router.pathname == "/" ? "navLink__active" : "font-VazirR text-deactivate"}`}>
+        <li className={`w-full px-5 py-2 ${router.pathname == "/" ? "navLink__active" : "font-VazirR text-deactivate"}`}>
           <Link href={"/"} className='flex gap-x-3.5 items-center w-fit'>
             <svg className='w-6 h-6'>
               <use href='#home'></use>
