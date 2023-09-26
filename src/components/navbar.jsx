@@ -83,8 +83,8 @@ export default function Navbar({ hidden }) {
           </Link>
         </li>
 
-        <li className={`w-full px-5 py-2   ${router.pathname == "/graph" ? "navLink__active" : "font-VazirR text-deactivate"}`}>
-          <Link href={"/graph "} className='flex gap-x-3.5 items-center w-fit'>
+        <li className={`w-full px-5 py-2   ${router.pathname == "/Charge" ? "navLink__active" : "font-VazirR text-deactivate"}`}>
+          <Link href={"/Charge "} className='flex gap-x-3.5 items-center w-fit'>
             <svg className='w-6 h-6 '>
               <use href='#graph '></use>
             </svg>
