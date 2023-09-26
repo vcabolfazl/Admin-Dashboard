@@ -5,7 +5,6 @@ import persian_fa from "react-date-object/locales/persian_fa"
 export default function CreateWork() {
   const date = new Date().toLocaleString("fa-IR-u-nu-latn").slice(0, 8)
   const [selectedDates, setSelectedDates] = useState(date);
-
   const handleDateChange = (dates) => {
     setSelectedDates(dates);
   };
@@ -33,9 +32,6 @@ export default function CreateWork() {
           <p className='text-sm text-gray-300'>وضعیت:</p>
           <input type="text" className='bg-inherit outline-none border-none' />
         </div>
-        {/* <div className="flex gap-1 border-b-2 border-primry pb-1  items-center">
-          <input type="date" className='bg-inherit outline-none border-none' />
-        </div> */}
         <div className='flex gap-1 border-b-2 border-primry pb-1  items-center justify-between '>
           <p className='text-sm text-gray-300'>تاریخ تحویل:</p>
           <MultiDatePicker
