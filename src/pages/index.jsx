@@ -20,7 +20,7 @@ export default function Home() {
           </select>
         </form>
 
-        <Link href={"/"} className="flex items-center gap-2.5 text-purple bg-purple/30 border-2 border-purple px-3 py-2 rounded-lg">
+        <Link href={"/CreateWork"} className="flex items-center gap-2.5 text-purple bg-purple/30 border-2 border-purple px-3 py-2 rounded-lg">
           ایجاد کار
           <svg className="w-5 h-5">
             <use href="#plus"></use>

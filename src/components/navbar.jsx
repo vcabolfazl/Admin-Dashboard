@@ -21,8 +21,8 @@ export default function Navbar({ hidden }) {
           </Link>
         </li>
 
-        <li className={`w-full px-5 py-2   ${router.pathname == "/add" ? "navLink__active" : "font-VazirR text-deactivate"}`}>
-          <Link href={"/add"} className='flex gap-x-3.5 items-center w-fit'>
+        <li className={`w-full px-5 py-2   ${router.pathname == "/CreateWork" ? "navLink__active" : "font-VazirR text-deactivate"}`}>
+          <Link href={"/CreateWork"} className='flex gap-x-3.5 items-center w-fit'>
             <svg className='w-6 h-6'>
               <use href='#plus'></use>
             </svg>
