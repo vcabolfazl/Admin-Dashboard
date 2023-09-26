@@ -1,7 +1,14 @@
-import React from 'react'
+import React, { useState } from 'react'
+import MultiDatePicker from 'react-multi-date-picker';
+import persian from 'react-date-object/calendars/persian';
+import persian_fa from "react-date-object/locales/persian_fa"
 export default function CreateWork() {
   const date = new Date().toLocaleString("fa-IR-u-nu-latn").slice(0, 8)
-  console.log(date);
+  const [selectedDates, setSelectedDates] = useState(date);
+
+  const handleDateChange = (dates) => {
+    setSelectedDates(dates);
+  };
   return (
     <div className="mt-20 float-left w-full md:w-5/6 md:px-5 md:pt-3.5">
       <div className="flex items-center justify-between">
@@ -26,9 +33,21 @@ export default function CreateWork() {
           <p className='text-sm text-gray-300'>وضعیت:</p>
           <input type="text" className='bg-inherit outline-none border-none' />
         </div>
-        <div className="flex gap-1 border-b-2 border-primry pb-1  items-center">
-          <p className='text-sm text-gray-300'>تاریخ تحویل:</p>
+        {/* <div className="flex gap-1 border-b-2 border-primry pb-1  items-center">
           <input type="date" className='bg-inherit outline-none border-none' />
+        </div> */}
+        <div className='flex gap-1 border-b-2 border-primry pb-1  items-center justify-between '>
+          <p className='text-sm text-gray-300'>تاریخ تحویل:</p>
+          <MultiDatePicker
+            inputClass='bg-inherit outline-none border-none'
+            calendar={persian}
+            locale={persian_fa}
+            value={selectedDates}
+            onChange={handleDateChange}
+          />
+          <svg className="w-4 h-4">
+            <use href='#arrow-down'></use>
+          </svg>
         </div>
         <div className="flex gap-1 border-b-2 border-primry pb-1  items-center">
           <p className='text-sm text-gray-300'>مستندات:</p>

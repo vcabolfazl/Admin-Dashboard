@@ -44,7 +44,7 @@ export default function Navbar({ hidden }) {
             <svg className='w-6 h-6'>
               <use href='#docs'></use>
             </svg>
-            اداری
+            سوابق مالی
           </Link>
         </li>
 
@@ -62,7 +62,7 @@ export default function Navbar({ hidden }) {
             <svg className='w-6 h-6 '>
               <use href='#folder'></use>
             </svg>
-            دبیرخانه
+            تابلو اعلانات
           </Link>
         </li>
 
