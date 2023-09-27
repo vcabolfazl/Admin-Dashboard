@@ -5,13 +5,13 @@ import React from 'react'
 export default function Navbar({ hidden }) {
   const router = useRouter()
   return (
-    <nav className={`fixed w-2/3 md:w-1/6 h-full top-0 right-0 bg-primry py-4 z-30  ${hidden ? "hidden md:block" : null}`}>
+    <nav style={{ zIndex: "999" }} className={`fixed w-2/3 md:w-1/6 h-full top-0 right-0 bg-primry py-4 z-50  ${hidden ? "hidden md:block" : null}`}>
       <div className="flex justify-center mb-6">
         <svg className='w-[91px] h-[48px]'>
           <use href='#Logo'></use>
         </svg>
       </div>
-      <ul className='space-y-1'>
+      <ul className='space-y-1 z-50'>
         <li className={`w-full px-5 py-2 ${router.pathname == "/" ? "navLink__active" : "font-VazirR text-deactivate"}`}>
           <Link href={"/"} className='flex gap-x-3.5 items-center w-fit'>
             <svg className='w-6 h-6'>
@@ -30,7 +30,7 @@ export default function Navbar({ hidden }) {
           </Link>
         </li>
 
-        <li className={`w-full px-5 py-2   ${router.pathname == "/users" ? "navLink__active" : "font-VazirR text-deactivate"}`}>
+        <li className={`w-full px-5 py-2 ${router.pathname == "/users" ? "navLink__active" : "font-VazirR text-deactivate"}`}>
           <Link href={"/users"} className='flex gap-x-3.5 items-center w-fit'>
             <svg className='w-6 h-6'>
               <use href='#users'></use>
@@ -39,8 +39,8 @@ export default function Navbar({ hidden }) {
           </Link>
         </li>
 
-        <li className={`w-full px-5 py-2   ${router.pathname == "/docs" ? "navLink__active" : "font-VazirR text-deactivate"}`}>
-          <Link href={"/docs"} className='flex gap-x-3.5 items-center w-fit'>
+        <li className={`w-full px-5 py-2   ${router.pathname == "/Financial" ? "navLink__active" : "font-VazirR text-deactivate"}`}>
+          <Link href={"/Financial"} className='flex gap-x-3.5 items-center w-fit'>
             <svg className='w-6 h-6'>
               <use href='#docs'></use>
             </svg>
